@@ -20,6 +20,14 @@ To install dbt in your local and configure it with aws athena.
 # Intialisation
 - dbt init demo_dbt
 
+# dbt command
+
+- dbt clean : this will remove the /dbt_modules and /target
+- dbt run --models +modelname - will run modelname and all parents
+- dbt run --models modelname+ - will run modelname and all children
+- dbt run --models +modelname+ - will run modelname, and all parents and children
+- dbt run --exclude modelname - will run all models except modelname
+
 # https://docs.getdbt.com/docs/introduction
 
 ### Resources:
