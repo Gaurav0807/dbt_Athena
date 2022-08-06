@@ -6,6 +6,21 @@ Try running the following commands:
 - dbt run
 - dbt test
 
+# Create virtual environment
+- Python -m venv venv(window/Macos)
+# Then
+To install dbt in your local and configure it with aws athena.
+- pip install dbt-core
+- pip install git+https://github.com/Tomme/dbt-athena.git
+
+-configure your profiles.yml 
+# Create aws configure profile 
+- https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
+
+# Intialisation
+- dbt init demo_dbt
+
+# https://docs.getdbt.com/docs/introduction
 
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
