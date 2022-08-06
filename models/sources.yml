@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: testingdata_db
+    description: Athena Test data
+    tables:
+      - name: testingdata123478

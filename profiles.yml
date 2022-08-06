@@ -1,0 +1,11 @@
+demo_dbt:
+  target: dev
+  outputs:
+    dev:
+     database: awsdatacatalog
+     work_group: primary
+     region_name: us-west-2
+     s3_staging_dir: s3://testingdata123478/
+     schema: dbt
+     type: athena
+     aws_profile_name: dev
